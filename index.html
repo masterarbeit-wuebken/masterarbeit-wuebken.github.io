@@ -1,77 +1,117 @@
 <!DOCTYPE html>
-<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" >
-  <head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
 
-	<meta charset="UTF-8">
-    <title>Masterthesis Überblick Lösungen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Tool/css/style.css">
-  
 </head>
 
+<style>
+body {
+	
+	background-image: url('grunge_patterns.jpg');
+	background-attachment: fixed;
+	color: #333;
+}
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
+	
+}
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+::-moz-placeholder {  
+   color: #955;
+   text-align: center;
+}
+:-ms-input-placeholder {  
+   color: #955;
+   text-align: center;
+}
+</style>
 
-<body id="Start">
+<body>
+	
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">				
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-<div class="content">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	 
 
-<form class="controls_2">
+	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 
-<article class="infobox3">
-
-    <section id="start">
-        <h2><a href="#start">Zusammenfassung</a></h2>
-		<p>
-		<strong>Zusammenfassung</strong><br><br>
-		Fortschreitende Digitalisierung führt zu strukturellen Veränderungen in Unternehmen. 
-		Cloud Computing (CC) Dienste sind Verursacher und Treiber dieser Veränderungen. 
-		Durch die Disruption ist es IT Dienstleistern möglich, sich zu spezialisieren und zu modularisieren. 
-		<br><br>
-		Ein IT Wertschöpfungsnetzwerk (engl. IT Service Value Network (ITSVN)) mit vielen verschiedenen Anbietern unterschiedlicher Rollenverteilungen entsteht. 
-		Dienste können allein, gemeinsam, nacheinander oder simultan in der Wertschöpfung entwickelt und dem Unternehmen zur Verfügung stehen. 
-		Die Akteure und insbesondere die Konsumenten in diesem ITSVN müssen in der Lage sein, die hierdurch hervorgerufenen, heterogenen Einflüsse zu kontrollieren und beherrschbar zu gestalten. 
-		Bisher kam dem Management für IT Service die Aufgabe zur konzeptionellen Umsetzung und zur Unterstützung der Geschäftsprozesse in Unternehmen zu. 
-		Doch die dort verankerten Best Practices sind auf das neue Bereitstellungsmodell nicht ohne Weiteres übertragbar. 
-		<br><br>
-		Diese Arbeit versucht, mit Hilfe einer Literaturanalyse Empfehlungen, Methoden und Werkzeuge zu ermitteln, die Ansätze zur Bewältigung dieser Heterogenität liefern. 
-		<br>
-		41 Quellen aus 3 verschiedenen Datenbanken sind zur Analyse herangezogen worden. Ergänzend wurden Interviews mit Experten der IT Branche durchgeführt. 
-		Die überwiegende Mehrheit der Quellen legen ihren Lösungsschwerpunkt auf eine technische, weniger managementorientierte oder rechtliche Umsetzung. 
-		Die Umsetzung vieler Lösungsvorschläge basiert auf der Partizipation aller Anbieter in einem ITSVN. Dabei konnten die Lösungsvorschläge den Kategorien `Kompatibilität´, `Portierbarkeit´, `SLA Regelungen´ und `Anbieter- bzw. Serviceauswahl´ zugeordnet werden. 
-		Ein Teil nutzt bereits existierende Standards. Zudem sehen viele Autoren der untersuchten Lösungsvorschläge einen dringenden Handlungsbedarf in der einheitlichen Beschreibung von Diensten der Anbieter aller Ebenen. 
-		<br>
-		Das Ergebnis der Analyse zeigt deutlich, dass unabhängige, generalisierte Anwendungen und Plattformen einen geeigneten Ansatz zur Bewältigung von Heterogenität liefern können. 
-		<br><br>
-		Dieses Tool bietet zum einen eine graphische Darstellung der Methodik, die für die Literaturanalyse erarbeitet wurde. 
-		Zum anderen enthält es die PDF Dateien mit den verschiedenen Lösungsvorschlägen, die für weitere Operationen verwendet werden können. Die PDF Dateien sind im Ergebnisteil zu finden.
-		<br>
-		In der Rubrik Downloads können die gesamte Masterarbeit sowie das Excel Sheet, das eine eigenständige Durchführung, Dokumentation und Bewertung der Texte erlaubt, heruntergeladen werden.
-		</p>
-    </section> 
-    
-    <section id="Ergebnisse">
-    <h2><a href="Tool/html/A_MethodikLiteraturanalyse.html">Tool starten</a></h2>
-    <p><h4>Ergebnisse</h4></p>
-    </section>
-    
-
-    <section id="Einstieg">
-    <h2><a href="Tool/html/G_Ergebnisse.html">Zu den Ergebnissen</a></h2>
-	<p><h4><img height="90" src="Tool/icons/tumlogo.png"></h4></p>
-	<p><h4>Wissenschaftliche Arbeit zur Erlangung des Grades <br>Master of Science <br>an der TUM School of Management <br>der Technischen Universität München</p></h4>
-	<p><h1>Empfehlungen, Methoden & Werkzeuge zur<br>Bewältigung von Heterogenität in IT Wertschöpfungsnetzwerken<br>in Zeiten von Cloud Computing</h1></p>
-	<p><h4>Maximilian Robert Maria Wübken</h4></p>
-	<p><h4>München im Januar 2017</h4></p>
-	<p><h4><img src="Tool/icons/Fakultaet_logo.png" height="60"></h4></p>
-    </section>
-
-</article>
-
-
-</form>
-</div>
+	<script type="text/javascript">
+	"use strict";
+	function loadPage(pwd) {
+		
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+			
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+				window.location= url;
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+			
+				parent.location.hash= hash;
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+	 
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+			
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+		
+	</script>
 
 </body>
 </html>
-
