@@ -61,9 +61,8 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">				
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Eingabe...</button>
-					<p id="wrongPassword" style="display: none">falsches Passwort</p>
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Eingabe Passwort" /> <br />
+					<button id="loginbutton" type="button">Los</button>
 				</div>
 			</div>
 		</div>
@@ -94,7 +93,7 @@ div.vertical {
 			
 				parent.location.hash= hash;
 				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
+				$("#password").attr("placeholder","Falsches Passwort");
 				$("#password").val("");
 			}
 		});
